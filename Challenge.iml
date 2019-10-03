@@ -34,5 +34,6 @@
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-kqueue:4.1.32.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-epoll:4.1.32.Final" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
   </component>
 </module>

@@ -5,7 +5,11 @@ package com.mahesh.stack;
 Author: Mahesh Punugupati
 */
 
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class StackWithArray {
     int stack[];
     int top=-1;
@@ -34,6 +38,11 @@ public class StackWithArray {
         for(int i=0;i<=top;i++)
             System.out.print(stack[i]+"\t");
         System.out.println();
+    }
+    public int top(){
+        if(top==-1)
+            return -1;
+        return stack[top];
     }
     public static void main(String ar[]){
         StackWithArray stackWithArray= new StackWithArray();

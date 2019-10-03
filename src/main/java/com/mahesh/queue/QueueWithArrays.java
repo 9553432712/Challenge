@@ -4,7 +4,11 @@ package com.mahesh.queue;
 Author: Mahesh Punugupati
 */
 
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class QueueWithArrays {
     int front;
     int rear;
@@ -13,7 +17,7 @@ public class QueueWithArrays {
     int queue[];
 
 
-    QueueWithArrays(){
+    public QueueWithArrays(){
         capacity = 10;
         front = 0;
         rear = capacity-1;
@@ -34,13 +38,15 @@ public class QueueWithArrays {
         queue[rear] = a;
         size++;
     }
-    public void dequeue(){
+    public int dequeue(){
         if(size==0){
             System.out.println("Queue is empty");
-            return;
+            return -1;
         }
+        int result = queue[front];
         front = (front+1)%capacity;
         size--;
+        return result;
     }
     public void print(){
         int temp=0;
