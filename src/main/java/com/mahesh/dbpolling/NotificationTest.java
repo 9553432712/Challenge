@@ -1,4 +1,6 @@
-package comd.sample;
+package com.mahesh.dbpolling;
+
+import org.postgresql.PGConnection;
 
 import java.sql.*;
 

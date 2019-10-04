@@ -1,18 +1,12 @@
-package comd.sample;
-
+package com.mahesh.dbpolling;
 
 
 import com.impossibl.postgres.api.jdbc.PGConnection;
 import com.impossibl.postgres.api.jdbc.PGNotificationListener;
 import com.impossibl.postgres.jdbc.PGDataSource;
 import org.postgresql.PGNotification;
-import org.postgresql.core.Encoding;
-import org.postgresql.fastpath.Fastpath;
-import org.postgresql.largeobject.LargeObjectManager;
 
 import java.lang.reflect.Method;
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DBPollingListener extends Thread {

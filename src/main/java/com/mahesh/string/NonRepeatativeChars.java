@@ -1,4 +1,4 @@
-package comd.sample;
+package com.mahesh.string;
 
 import java.util.HashMap;
 import java.util.Map;

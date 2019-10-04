@@ -1,12 +1,13 @@
-package comd.sample;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
+package com.mahesh.dbpolling;
 
 import com.impossibl.postgres.api.jdbc.PGConnection;
 import com.impossibl.postgres.api.jdbc.PGNotificationListener;
 import com.impossibl.postgres.jdbc.PGDataSource;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class ListenNotify
 {

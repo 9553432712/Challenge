@@ -1,7 +1,7 @@
-package comd.sample;
+package com.mahesh.stream;
 
 import java.util.ArrayList;
-import java.util.stream.*;
+
 public class Streams {
 	
 	public static void main(String args[]) {
