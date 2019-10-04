@@ -9,12 +9,15 @@ Author: Mahesh Punugupati
 public class DijkstraAlg {
     int V = 4;
     boolean[] visited = new boolean[V];
-    int[][] graph = {
-            {0, 2, 0, 4},
-            {3, 0, 0, 4},
-            {0, 1, 0, 4},
-            {0, 2, 0, 0},
-    };
+    int[][] graph;
+    DijkstraAlg() {    
+	    graph = new int[][]{
+	            {0, 2, 0, 4},
+	            {3, 0, 0, 4},
+	            {0, 1, 0, 4},
+	            {0, 2, 0, 0},
+	    };
+    }
 
     public static void main(String ar[]) {
         DijkstraAlg dijkstraAlg = new DijkstraAlg();

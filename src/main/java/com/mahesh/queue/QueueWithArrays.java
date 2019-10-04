@@ -29,20 +29,7 @@ public class QueueWithArrays {
         front = 0;
         rear = capacity - 1;
         queue = new int[capacity];
-    }
-
-    public static void main(String ar[]) {
-        QueueWithArrays queueWithArrays = new QueueWithArrays(3);
-        queueWithArrays.enqueue(1);
-        queueWithArrays.enqueue(1);
-        queueWithArrays.enqueue(1);
-        queueWithArrays.print();
-        queueWithArrays.dequeue();
-        queueWithArrays.dequeue();
-        queueWithArrays.print();
-        queueWithArrays.enqueue(1);
-        queueWithArrays.print();
-    }
+    }   
 
     public void enqueue(int a) {
         if (size == capacity) {
