@@ -17,53 +17,70 @@ public class QueueWithArrays {
     int queue[];
 
 
-    public QueueWithArrays(){
+    public QueueWithArrays() {
         capacity = 10;
         front = 0;
-        rear = capacity-1;
+        rear = capacity - 1;
         queue = new int[capacity];
     }
-    QueueWithArrays(int size){
+
+    QueueWithArrays(int size) {
         capacity = size;
         front = 0;
-        rear = capacity-1;
+        rear = capacity - 1;
         queue = new int[capacity];
     }
-    public void enqueue(int a){
-        if(size==capacity){
+
+    public static void main(String ar[]) {
+        QueueWithArrays queueWithArrays = new QueueWithArrays(3);
+        queueWithArrays.enqueue(1);
+        queueWithArrays.enqueue(1);
+        queueWithArrays.enqueue(1);
+        queueWithArrays.print();
+        queueWithArrays.dequeue();
+        queueWithArrays.dequeue();
+        queueWithArrays.print();
+        queueWithArrays.enqueue(1);
+        queueWithArrays.print();
+    }
+
+    public void enqueue(int a) {
+        if (size == capacity) {
             System.out.println("Queue is full");
             return;
         }
-        rear = (rear+1)%capacity;
+        rear = (rear + 1) % capacity;
         queue[rear] = a;
         size++;
     }
-    public int dequeue(){
-        if(size==0){
+
+    public int dequeue() {
+        if (size == 0) {
             System.out.println("Queue is empty");
             return -1;
         }
         int result = queue[front];
-        front = (front+1)%capacity;
+        front = (front + 1) % capacity;
         size--;
         return result;
     }
-    public void print(){
-        int temp=0;
+
+    public void print() {
+        int temp = 0;
         System.out.println("----------------------");
-        if(size==0)
+        if (size == 0)
             return;
-        if(front<rear) {
-            for (int i = front; i <= rear && temp<size ; i++, temp++) {
+        if (front < rear) {
+            for (int i = front; i <= rear && temp < size; i++, temp++) {
                 System.out.print(queue[i] + " ");
             }
             System.out.println();
             return;
         }
-        for(int i=front;i<capacity && temp<size;i++, temp++)
-            System.out.print(queue[i]+" ");
-        for(int i=0;i<=rear && temp<size;i++, temp++)
-            System.out.print(queue[i]+" ");
+        for (int i = front; i < capacity && temp < size; i++, temp++)
+            System.out.print(queue[i] + " ");
+        for (int i = 0; i <= rear && temp < size; i++, temp++)
+            System.out.print(queue[i] + " ");
         System.out.println();
 
     }
