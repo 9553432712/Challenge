@@ -1,0 +1,10 @@
+
+8squid:S2189W""Add an end condition to this loop.(¤èÄ7
+csquid:S20953"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+?squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148c"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Vsquid:S1161":Add the "@Override" annotation above this method signature(²Â¢Úýÿÿÿÿ
+bsquid:S2142a"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâÞáøÿÿÿÿ
+N
+squid:S106_"9Replace this use of System.out or System.err by a logger.(‚š‰1
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(öÜÅ«øÿÿÿÿ

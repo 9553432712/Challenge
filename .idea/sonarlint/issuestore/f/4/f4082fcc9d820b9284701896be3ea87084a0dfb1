@@ -1,0 +1,14 @@
+
+T
+squid:S106%"9Replace this use of System.out or System.err by a logger.(çàÒ‚ýÿÿÿÿ
+Tsquid:S1197	"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(²ƒ…¢
+csquid:S1192"GDefine a constant instead of duplicating this literal "mahesh" 4 times.(ÁœÜ‚ÿÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶ž¢Ñøÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÅàÄ„øÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(¦ñò­
+Nsquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ
+gsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(çàÒ‚ýÿÿÿÿ
+Hsquid:S1612",Replace this lambda with a method reference.(ÅàÄ„øÿÿÿÿ

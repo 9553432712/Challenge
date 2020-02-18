@@ -33,6 +33,7 @@ public class Streams {
 		s1.sal = 1200;
 		a.add(s1);		
 		a.stream().filter( x -> x.name.equals("naresh")).forEach(System.out::println);//.collect(Collectors.toList()));
+		//a.parallelStream().sorted().collect(Collectors.toMap(s.name, Function.identity());
 	}
 
 }
