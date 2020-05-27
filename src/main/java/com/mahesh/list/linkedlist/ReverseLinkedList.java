@@ -1,4 +1,4 @@
-package com.mahesh.linkedlist;
+package com.mahesh.list.linkedlist;
 
 
 /*

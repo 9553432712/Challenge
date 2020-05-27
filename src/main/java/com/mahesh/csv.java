@@ -10,7 +10,8 @@ import java.util.HashSet;
 import java.util.Random;
 
 public class csv {
-    final static int COUNT = 1000;
+    final static int COUNT = 75000;
+    static String serialNumber = "MPALL3";
     static String randomMACAddress(){
         Random rand = new Random();
         byte[] macAddr = new byte[6];
@@ -26,16 +27,16 @@ public class csv {
     }
     public static void main(String ar[]){
         HashSet<String> macRam = new HashSet<>();
-        for(int i=0;i<1000;i++) {
+        for(int i=0;i<COUNT;i++) {
             macRam.add(randomMACAddress());
         }
-//        macRam.stream().forEach(s -> System.out.println(s));
-        serialNumber();
+        macRam.stream().forEach(s -> System.out.println(s));
+//        serialNumber();
     }
     static String[] serialNumber(){
         String[] serial = new String[COUNT];
         for(int i=0;i<COUNT;i++){
-            System.out.println("MP"+String.format("%010d",i));
+            System.out.println(serialNumber+String.format("%010d",i));
         }
         return serial;
     }
