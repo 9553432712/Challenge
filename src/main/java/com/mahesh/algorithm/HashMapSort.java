@@ -10,7 +10,7 @@ import java.util.*;
 
 public class HashMapSort {
     int i;
-    public static void main(String arg[]){
+    public static void main(String[] arg){
         HashMap<String, String> h = new LinkedHashMap<>();
         h.put("mahesh","mahesh");
         h.put("aa", "bb");
@@ -22,18 +22,20 @@ public class HashMapSort {
         double d=x.doubleValue();
         System.out.println(y+b+d);
 
-        List<Map.Entry<String, String>> l = new ArrayList<Map.Entry<String, String>>(h.entrySet());
-        Collections.sort(l, new Comparator<Map.Entry<String, String>>() {
+        List<Map.Entry<String, String>> l = new ArrayList<>(h.entrySet());
+        /*Collections.sort(l, new Comparator<Map.Entry<String, String>>() {
             @Override
             public int compare( Map.Entry<String, String>o1, Map.Entry<String, String> o2) {
                 return o1.getKey().compareTo(o2.getKey());
             }
-        });
-        h = new LinkedHashMap<String, String>();
+        });*/
+
+        Collections.sort(l, (Map.Entry<String, String> m1, Map.Entry<String, String>m2) ->  m1.getValue().compareTo(m2.getValue()));
+        h = new LinkedHashMap<>();
         for(Map.Entry<String, String>a: l){
             h.put(a.getKey(),a.getValue());
         }
         System.out.println(h);
-Collections.sort(l,Collections.reverseOrder());
+        Collections.sort(l,Collections.reverseOrder());
     }
 }

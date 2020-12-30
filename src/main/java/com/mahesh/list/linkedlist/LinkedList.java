@@ -17,6 +17,10 @@ public class LinkedList {
         linkedList.print();
     }
 
+    public Node getHead(){
+        return root;
+    }
+
     public void add(int a) {
         Node node = new Node(a);
         if (root == null) {
@@ -41,14 +45,15 @@ public class LinkedList {
         }
     }
 
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int a) {
-            data = a;
-            next = null;
-        }
-    }
-
 }
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int a) {
+        data = a;
+        next = null;
+    }
+}
+

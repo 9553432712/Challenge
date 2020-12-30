@@ -13,13 +13,13 @@ public class ReverseLinkedList {
         linkedList.add(2);
         linkedList.add(3);
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
-        LinkedList.Node newRoot = reverseLinkedList.reverse(linkedList.root);
+        Node newRoot = reverseLinkedList.reverse(linkedList.getHead());
         reverseLinkedList.print(newRoot);
     }
 
-    public LinkedList.Node reverse(LinkedList.Node current) {
-        LinkedList.Node previous = null;
-        LinkedList.Node nextNode;
+    public Node reverse(Node current) {
+        Node previous = null;
+        Node nextNode;
         while (current != null) {
             nextNode = current.next;
             current.next = previous;
@@ -30,8 +30,8 @@ public class ReverseLinkedList {
         return previous;
     }
 
-    public void print(LinkedList.Node root) {
-        LinkedList.Node temp = root;
+    public void print(Node root) {
+        Node temp = root;
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;

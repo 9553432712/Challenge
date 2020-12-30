@@ -14,12 +14,13 @@ class Odd extends Thread {
     }
 
     private void printOdd() throws InterruptedException {
-        synchronized (this) {
+        synchronized (this)
+        {
             for (int i = 1; i < 10; i = i + 2) {
-                sleep(10);
                 if (i % 2 == 1)
                     System.out.println(i);
                 notify();
+                sleep(10);
             }
         }
     }
@@ -36,12 +37,13 @@ class Even extends Thread {
     }
 
     private void printEven() throws InterruptedException {
-        synchronized (this) {
-            for (int i = 0; i < 10; i = i + 2) {
+        synchronized (this)
+        {
+            for (int i = 2; i < 10; i = i + 2) {
+                sleep(10);
                 if (i % 2 == 0)
                     System.out.println(i);
                 notify();
-                sleep(10);
             }
         }
     }
