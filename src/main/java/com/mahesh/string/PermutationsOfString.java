@@ -2,17 +2,17 @@ package com.mahesh.string;
 
 public class PermutationsOfString {
   public static void main(String ar[]){
-    String s = "mma.sdfs";
-    for(String ss: s.split("\\.")){
-      System.out.println(ss);
-    }
+    String s = "abc";
+    combinations(s);
   }
-  public static void perm(String st, String rem){
+  public static void combinations(String st){
     if(st.length()==0){
-      System.out.println(rem);
+      System.out.println(st);
     }
     for(int i=0;i<st.length();i++){
-      //char c =
+      for(int j=i+1;j<=st.length();j++){
+        System.out.println(st.substring(i,j));
+      }
     }
   }
 }
